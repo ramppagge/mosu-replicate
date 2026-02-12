@@ -15,12 +15,14 @@
 
 html {
   scroll-behavior: smooth;
+  overflow-x: hidden;
 }
 
 body {
   background-color: var(--color-brand-secondary);
   color: var(--color-brand-primary);
   font-family: var(--font-sans);
+  overflow-x: hidden;
 }
 
 /* Scrollbar styling */

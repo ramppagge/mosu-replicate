@@ -22,7 +22,7 @@ export default function SectionTitle({
       className="text-center mb-12 md:mb-16"
     >
       <h2
-        className={`font-display font-bold text-3xl md:text-4xl lg:text-5xl tracking-tight ${
+        className={`font-display font-bold text-2xl sm:text-3xl md:text-4xl lg:text-5xl tracking-tight ${
           light ? "text-white" : "text-brand-primary"
         }`}
       >
@@ -38,7 +38,7 @@ export default function SectionTitle({
         </p>
       )}
       <div
-        className={`mt-6 mx-auto w-12 h-1 rounded-full ${
+        className={`mt-6 mx-auto w-8 sm:w-12 h-1 rounded-full ${
           light ? "bg-brand-accent/50" : "bg-brand-accent"
         }`}
       />

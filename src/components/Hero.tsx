@@ -25,7 +25,7 @@ export default function Hero() {
       />
 
       {/* Content */}
-      <div className="relative z-10 text-center px-6 max-w-4xl mx-auto">
+      <div className="relative z-10 text-center px-4 sm:px-6 max-w-4xl mx-auto">
         {/* Badge */}
         <motion.div
           initial={{ opacity: 0, y: 20 }}
@@ -45,7 +45,7 @@ export default function Hero() {
           animate={{ opacity: 1 }}
           transition={{ duration: 0.3, delay: 2.0 }}
         >
-          <h1 className="font-display text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-[0.9] tracking-tighter">
+          <h1 className="font-display text-4xl sm:text-6xl md:text-8xl lg:text-9xl font-bold text-white leading-[0.9] tracking-tighter">
             <CharReveal delay={2.0}>Gather,</CharReveal>
             <br />
             <span className="text-brand-accent">
@@ -85,7 +85,7 @@ export default function Hero() {
           initial={{ opacity: 0 }}
           animate={{ opacity: 1 }}
           transition={{ delay: 3.5, duration: 1 }}
-          className="mt-20 flex items-center justify-center gap-8 text-white/20"
+          className="mt-12 md:mt-20 flex items-center justify-center gap-8 text-white/20"
         >
           <span className="h-px w-12 bg-white/10" />
           <span className="text-xs tracking-[0.3em] uppercase font-mono">

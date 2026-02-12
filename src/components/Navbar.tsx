@@ -62,7 +62,7 @@ export default function Navbar() {
             {/* Logo */}
             <motion.a
               href="#home"
-              className="font-display text-2xl font-bold tracking-tight text-white"
+              className="font-display text-xl sm:text-2xl font-bold tracking-tight text-white"
               whileHover={{ scale: 1.02 }}
               whileTap={{ scale: 0.98 }}
             >
@@ -160,7 +160,7 @@ export default function Navbar() {
                   <a
                     href={link.href}
                     onClick={() => setMobileOpen(false)}
-                    className="font-display text-4xl font-bold text-white hover:text-brand-accent transition-colors duration-300"
+                    className="font-display text-3xl sm:text-4xl font-bold text-white hover:text-brand-accent transition-colors duration-300"
                   >
                     {link.label}
                   </a>
@@ -173,7 +173,7 @@ export default function Navbar() {
               initial={{ opacity: 0 }}
               animate={{ opacity: 1 }}
               transition={{ delay: 0.6 }}
-              className="absolute bottom-10 flex items-center gap-6 text-sm text-white/30"
+              className="absolute bottom-6 sm:bottom-10 flex items-center gap-6 text-sm text-white/30"
             >
               <span>Instagram</span>
               <span className="w-1 h-1 rounded-full bg-white/20" />

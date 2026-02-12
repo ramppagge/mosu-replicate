@@ -24,7 +24,7 @@ export default function Footer() {
         }}
       />
 
-      <div className="relative z-10 max-w-7xl mx-auto px-6 lg:px-8 py-16 md:py-20">
+      <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
         {/* Top: Big CTA */}
         <div className="text-center mb-16">
           <motion.p
@@ -42,7 +42,7 @@ export default function Footer() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true }}
             transition={{ delay: 0.1, duration: 0.6 }}
-            className="inline-block font-display text-4xl md:text-6xl lg:text-7xl font-bold text-white hover:text-brand-accent transition-colors duration-500 tracking-tight"
+            className="inline-block font-display text-3xl sm:text-4xl md:text-6xl lg:text-7xl font-bold text-white hover:text-brand-accent transition-colors duration-500 tracking-tight"
           >
             Let&apos;s meet.
           </motion.a>
@@ -69,7 +69,7 @@ export default function Footer() {
                   href={link.href}
                   target="_blank"
                   rel="noopener noreferrer"
-                  className="inline-flex items-center px-4 py-2 text-sm font-medium text-white/50 border border-white/10 rounded-full hover:text-white hover:border-white/30 transition-all duration-300"
+                  className="inline-flex items-center px-3 py-1.5 sm:px-4 sm:py-2 text-xs sm:text-sm font-medium text-white/50 border border-white/10 rounded-full hover:text-white hover:border-white/30 transition-all duration-300"
                 >
                   {link.label}
                 </a>

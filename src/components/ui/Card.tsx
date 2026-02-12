@@ -26,7 +26,7 @@ export default function Card({
       transition={{ duration: 0.6, delay: index * 0.15 }}
       className="group bg-white rounded-2xl overflow-hidden shadow-sm hover:shadow-md transition-shadow duration-300"
     >
-      <div className="relative h-56 overflow-hidden">
+      <div className="relative h-48 sm:h-56 overflow-hidden">
         <Image
           src={image}
           alt={title}
@@ -35,9 +35,9 @@ export default function Card({
           sizes="(max-width: 768px) 100vw, (max-width: 1200px) 50vw, 33vw"
         />
       </div>
-      <div className="p-5">
+      <div className="p-4 sm:p-5">
         <div className="flex items-start justify-between gap-3">
-          <h3 className="font-display font-bold text-lg text-brand-primary">
+          <h3 className="font-display font-bold text-base sm:text-lg text-brand-primary">
             {title}
           </h3>
           {price && (

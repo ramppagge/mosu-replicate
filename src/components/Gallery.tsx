@@ -48,8 +48,8 @@ export default function Gallery() {
   const x = useTransform(scrollYProgress, [0, 1], ["5%", "-45%"]);
 
   return (
-    <section id="gallery" ref={containerRef} className="py-20 md:py-32 overflow-hidden">
-      <div className="px-6 lg:px-8 max-w-7xl mx-auto mb-12">
+    <section id="gallery" ref={containerRef} className="py-16 md:py-24 lg:py-32 overflow-hidden">
+      <div className="px-4 sm:px-6 lg:px-8 max-w-7xl mx-auto mb-12">
         <SectionTitle
           title="The Vibe"
           subtitle="Step inside. Feel the warmth, hear the grinder, smell the brew."
@@ -57,7 +57,7 @@ export default function Gallery() {
       </div>
 
       {/* Horizontal scroll gallery driven by vertical scroll */}
-      <motion.div style={{ x }} className="flex gap-4 md:gap-6 px-6">
+      <motion.div style={{ x }} className="flex gap-3 sm:gap-4 md:gap-6 px-4 sm:px-6">
         {images.map((img, i) => (
           <motion.div
             key={i}
@@ -65,7 +65,7 @@ export default function Gallery() {
             whileInView={{ opacity: 1, y: 0 }}
             viewport={{ once: true, margin: "-100px" }}
             transition={{ duration: 0.7, delay: i * 0.1 }}
-            className={`shrink-0 w-[280px] md:w-[350px] lg:w-[400px] ${img.aspect} relative rounded-2xl overflow-hidden group`}
+            className={`shrink-0 w-[220px] sm:w-[280px] md:w-[350px] lg:w-[400px] ${img.aspect} relative rounded-2xl overflow-hidden group`}
           >
             <Image
               src={img.src}
@@ -77,7 +77,7 @@ export default function Gallery() {
             <div className="absolute inset-0 bg-brand-dark/0 group-hover:bg-brand-dark/30 transition-colors duration-500" />
 
             {/* Hover label */}
-            <div className="absolute bottom-0 left-0 right-0 p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
+            <div className="absolute bottom-0 left-0 right-0 p-3 sm:p-4 translate-y-full group-hover:translate-y-0 transition-transform duration-500">
               <span className="text-sm font-medium text-white bg-brand-dark/60 backdrop-blur-sm px-3 py-1.5 rounded-full">
                 {img.alt}
               </span>

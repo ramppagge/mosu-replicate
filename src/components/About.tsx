@@ -23,7 +23,7 @@ export default function About() {
   const imageScale = useTransform(scrollYProgress, [0, 0.5], [1.15, 1]);
 
   return (
-    <section id="about" ref={containerRef} className="py-24 md:py-40 px-6 lg:px-8 overflow-hidden">
+    <section id="about" ref={containerRef} className="py-16 md:py-24 lg:py-40 px-4 sm:px-6 lg:px-8 overflow-hidden">
       <div className="max-w-7xl mx-auto">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 lg:gap-20 items-center">
           {/* Image with parallax */}
@@ -47,10 +47,10 @@ export default function About() {
               whileInView={{ opacity: 1, scale: 1 }}
               viewport={{ once: true }}
               transition={{ delay: 0.5, duration: 0.5 }}
-              className="absolute bottom-6 right-6 bg-brand-accent text-brand-dark px-5 py-3 rounded-2xl"
+              className="absolute bottom-4 right-4 sm:bottom-6 sm:right-6 bg-brand-accent text-brand-dark px-3 py-2 sm:px-5 sm:py-3 rounded-2xl"
             >
-              <span className="font-display text-2xl font-bold block leading-none">EST.</span>
-              <span className="font-display text-lg font-bold">2020</span>
+              <span className="font-display text-xl sm:text-2xl font-bold block leading-none">EST.</span>
+              <span className="font-display text-base sm:text-lg font-bold">2020</span>
             </motion.div>
           </motion.div>
 
@@ -66,7 +66,7 @@ export default function About() {
               Our Story
             </motion.span>
 
-            <h2 className="font-display text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary leading-[1.05] tracking-tight mb-6">
+            <h2 className="font-display text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-brand-primary leading-[1.05] tracking-tight mb-6">
               <WordReveal delay={0.1}>More than just coffee.</WordReveal>
             </h2>
 
@@ -105,7 +105,7 @@ export default function About() {
                   transition={{ delay: 0.5 + i * 0.1, duration: 0.5 }}
                   className="text-center lg:text-left"
                 >
-                  <span className="font-display text-3xl font-bold text-brand-primary block">
+                  <span className="font-display text-2xl sm:text-3xl font-bold text-brand-primary block">
                     {stat.value}
                   </span>
                   <span className="text-sm text-brand-muted">{stat.label}</span>

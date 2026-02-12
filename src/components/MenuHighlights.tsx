@@ -24,7 +24,7 @@ export default function MenuHighlights() {
       : menuItems.filter((item) => item.category === active);
 
   return (
-    <section id="menu" className="py-20 md:py-32 px-6 lg:px-8">
+    <section id="menu" className="py-16 md:py-24 lg:py-32 px-4 sm:px-6 lg:px-8">
       <div className="max-w-7xl mx-auto">
         <SectionTitle
           title="Our Menu"
@@ -43,7 +43,7 @@ export default function MenuHighlights() {
             <button
               key={cat.key}
               onClick={() => setActive(cat.key)}
-              className={`relative px-5 py-2 text-sm font-medium rounded-full transition-all duration-300 cursor-pointer overflow-hidden ${
+              className={`relative px-3 py-1.5 sm:px-5 sm:py-2 text-xs sm:text-sm font-medium rounded-full transition-all duration-300 cursor-pointer overflow-hidden ${
                 active === cat.key
                   ? "text-white"
                   : "bg-white text-brand-muted hover:text-brand-primary"

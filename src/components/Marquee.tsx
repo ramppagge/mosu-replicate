@@ -42,12 +42,12 @@ export default function Marquee({
         {content.map((item, i) => (
           <span
             key={i}
-            className="flex items-center shrink-0 mx-4"
+            className="flex items-center shrink-0 mx-2 sm:mx-4"
           >
             <span className="font-display text-sm md:text-base font-medium tracking-wider uppercase text-white/80">
               {item}
             </span>
-            <span className="ml-8 text-brand-accent text-xs font-mono">
+            <span className="ml-4 sm:ml-8 text-brand-accent text-xs font-mono">
               {separator}
             </span>
           </span>

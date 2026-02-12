@@ -51,7 +51,7 @@ export default function Preloader() {
           </motion.div>
 
           {/* Counter */}
-          <div className="relative w-48">
+          <div className="relative w-40 sm:w-48">
             <div className="flex justify-between mb-2">
               <span className="text-xs text-white/40 font-mono">loading</span>
               <span className="text-xs text-brand-accent font-mono">
@@ -73,7 +73,7 @@ export default function Preloader() {
             initial={{ opacity: 0 }}
             animate={{ opacity: 1 }}
             transition={{ delay: 0.3 }}
-            className="absolute bottom-8 text-xs text-white/20 tracking-widest uppercase"
+            className="absolute bottom-4 sm:bottom-8 text-xs text-white/20 tracking-widest uppercase"
           >
             Brewing experience
           </motion.p>
