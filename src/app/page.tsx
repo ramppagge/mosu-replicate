@@ -1,9 +1,11 @@
 import Hero from "@/components/Hero";
 import Marquee from "@/components/Marquee";
 import About from "@/components/About";
-import MenuHighlights from "@/components/MenuHighlights";
+import Menu from "@/components/Menu";
 import Gallery from "@/components/Gallery";
+import OurSpace from "@/components/OurSpace";
 import Location from "@/components/Location";
+import CTAOrder from "@/components/CTAOrder";
 
 export default function Home() {
   return (
@@ -11,9 +13,11 @@ export default function Home() {
       <Hero />
       <Marquee />
       <About />
-      <MenuHighlights />
+      <Menu />
       <Gallery />
+      <OurSpace />
       <Location />
+      <CTAOrder />
     </>
   );
 }

@@ -91,3 +91,46 @@ export const locations: Location[] = [
 ];
 
 export const openingHours = "Open 24 Hours — Every Day";
+
+// Full menu for Menu section (4 categories)
+export type FullMenuCategory = "coffee" | "non-coffee" | "pastry" | "meals";
+export type MenuItemTag = "bestseller" | "new" | null;
+
+export interface FullMenuItem {
+  id: string;
+  title: string;
+  description: string;
+  price: string;
+  priceRaw: number;
+  category: FullMenuCategory;
+  tag: MenuItemTag;
+}
+
+export const fullMenuCategories: { key: FullMenuCategory; label: string }[] = [
+  { key: "coffee", label: "Coffee" },
+  { key: "non-coffee", label: "Non-Coffee" },
+  { key: "pastry", label: "Pastry" },
+  { key: "meals", label: "Meals" },
+];
+
+export const fullMenuItems: FullMenuItem[] = [
+  // COFFEE
+  { id: "c1", title: "Espresso", description: "Bold & intense single shot", price: "Rp 18.000", priceRaw: 18000, category: "coffee", tag: null },
+  { id: "c2", title: "Cappuccino", description: "Perfect balance of espresso & milk foam", price: "Rp 28.000", priceRaw: 28000, category: "coffee", tag: "bestseller" },
+  { id: "c3", title: "Latte", description: "Smooth espresso with steamed milk", price: "Rp 30.000", priceRaw: 30000, category: "coffee", tag: null },
+  { id: "c4", title: "Cold Brew", description: "24-hour steeped, smooth & strong", price: "Rp 32.000", priceRaw: 32000, category: "coffee", tag: null },
+  { id: "c5", title: "Caramel Macchiato", description: "Espresso with vanilla & caramel", price: "Rp 35.000", priceRaw: 35000, category: "coffee", tag: null },
+  // NON-COFFEE
+  { id: "n1", title: "Matcha Latte", description: "Premium Japanese matcha", price: "Rp 32.000", priceRaw: 32000, category: "non-coffee", tag: null },
+  { id: "n2", title: "Chocolate", description: "Rich Belgian chocolate", price: "Rp 28.000", priceRaw: 28000, category: "non-coffee", tag: null },
+  { id: "n3", title: "Earl Grey Tea", description: "Classic bergamot blend", price: "Rp 25.000", priceRaw: 25000, category: "non-coffee", tag: null },
+  { id: "n4", title: "Lemonade", description: "Fresh squeezed daily", price: "Rp 22.000", priceRaw: 22000, category: "non-coffee", tag: null },
+  // PASTRY
+  { id: "p1", title: "Croissant", description: "Buttery French classic", price: "Rp 25.000", priceRaw: 25000, category: "pastry", tag: null },
+  { id: "p2", title: "Cinnamon Roll", description: "Warm & gooey", price: "Rp 28.000", priceRaw: 28000, category: "pastry", tag: null },
+  { id: "p3", title: "Danish", description: "Fruit-filled delight", price: "Rp 26.000", priceRaw: 26000, category: "pastry", tag: null },
+  // MEALS
+  { id: "m1", title: "Avocado Toast", description: "Sourdough, avocado, poached egg", price: "Rp 45.000", priceRaw: 45000, category: "meals", tag: null },
+  { id: "m2", title: "Chicken Sandwich", description: "Grilled chicken, lettuce, aioli", price: "Rp 50.000", priceRaw: 50000, category: "meals", tag: null },
+  { id: "m3", title: "Breakfast Bowl", description: "Granola, yogurt, fresh fruits", price: "Rp 48.000", priceRaw: 48000, category: "meals", tag: null },
+];
